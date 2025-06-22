@@ -1,0 +1,252 @@
+.ward-workers-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #4CAF50;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #f5f5f5;
+}
+
+.ward-list-view h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.wards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ward-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ward-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ward-card h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.worker-count {
+  color: #666;
+  margin: 5px 0 15px;
+}
+
+.ward-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: #e0f7fa;
+  color: #00838f;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.more-skills {
+  color: #666;
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+/* Ward Detail View */
+.ward-detail-view h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ward-detail-view .worker-count {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.workers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.worker-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.worker-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #4CAF50;
+}
+
+.worker-info {
+  flex: 1;
+}
+
+.worker-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.worker-role {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.worker-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.worker-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.worker-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.contact-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.contact-btn.phone {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.contact-btn.email {
+  background-color: #2196F3;
+  color: white;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+/* Dark Mode Support */
+.dark .ward-card,
+.dark .worker-card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark .ward-card h3,
+.dark .worker-info h3 {
+  color: #4CAF50;
+}
+
+.dark .worker-role,
+.dark .worker-count,
+.dark .worker-meta {
+  color: #aaa;
+}
+
+.dark .skill-tag {
+  background-color: #2d2d2d;
+  color: #4CAF50;
+}
+
+.dark .back-button {
+  color: #4CAF50;
+}
+
+.dark .back-button:hover {
+  background-color: #2d2d2d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .worker-card {
+    flex-direction: column;
+  }
+  
+  .worker-avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .worker-contact {
+    flex-direction: row;
+    margin-top: 15px;
+  }
+}

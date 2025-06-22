@@ -1,0 +1,304 @@
+.help-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.help-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.help-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.help-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  flex: 1;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.search-button {
+  padding: 0 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+.help-categories {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.category-btn.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.help-articles {
+  margin-bottom: 40px;
+}
+
+.help-articles h2 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.article-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.contact-support {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.contact-support h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #45a049;
+}
+
+/* Dark Mode Support */
+.dark .help-container {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark .back-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .search-bar input {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #f5f5f5;
+}
+
+.dark .category-btn {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+.dark .category-btn:hover {
+  background-color: #3d3d3d;
+}
+
+.dark .category-btn.active {
+  background-color: #2E7D32;
+}
+
+.dark .article-card {
+  background-color: #2d2d2d;
+}
+
+.dark .article-card h3 {
+  color: #f5f5f5;
+}
+
+.dark .help-articles h2,
+.dark .contact-support {
+  border-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .help-page {
+    padding: 15px;
+  }
+  
+  .help-container {
+    padding: 20px;
+  }
+  
+  .help-search {
+    flex-direction: column;
+  }
+  
+  .help-categories {
+    flex-direction: column;
+  }
+  
+  .category-btn {
+    justify-content: center;
+  }
+  
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+.educational-tips {
+  background-color: #f4fdf4;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.educational-tips .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.educational-tips h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background-color: #ffffff;
+  border-left: 5px solid #66bb6a;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #388e3c;
+}
+
+.tip-card p {
+  color: #555;
+  font-size: 0.95rem;
+}

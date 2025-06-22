@@ -1,0 +1,104 @@
+  .login-page {
+  display: flex; /* fixed */
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* added this */
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+  
+  .login-right {
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .login-form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form-container h2 {
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 25px;
+  }
+  
+  .login-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form-container label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .login-form-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .forgot-link {
+    text-align: right;
+    margin: 10px 0;
+  }
+  
+  .forgot-link a {
+    color: green;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .login-form-container button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-form-container button:hover {
+    background-color:#4CAF50;
+  }
+  
+  .support-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .support-text a {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .login-page {
+      flex-direction: column;
+    }
+  
+    .login-left,
+    .login-right {
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .login-form-container {
+      box-shadow: none;
+    }
+  }

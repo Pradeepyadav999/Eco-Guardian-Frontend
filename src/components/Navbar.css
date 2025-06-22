@@ -1,0 +1,131 @@
+  /* Banner above navbar */
+ .navbar-banner {
+    border-radius: 12px;
+    width: 100%;
+    background: linear-gradient(to right,  #03883a,  #0bdf63);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .banner-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar below banner */
+   .navbar {
+    border-radius: 12px;
+    background-color:  #4CAF50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #ccffcc;
+    text-decoration: underline;
+  }
+  
+  /* User dropdown button */
+  .user-dropdown {
+    position: relative;
+  }
+  
+  .user-dropdown button {
+    background: none;
+    border: none;
+    color: #111311;
+    cursor: pointer;
+  }
+  
+  .user-dropdown dialog {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  } 
+  
+   .user-dropdown dialog a {
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+  }
+  
+  .user-dropdown dialog a:hover {
+    background-color: #f0f0f0;
+  } 
+  
+   .user-dropdown button:hover {
+    color: #ccffcc;
+  }
+  
+  /* Hamburger icon for mobile */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+   
+   @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #4CAF50;
+      position: absolute;
+      top: 65px;
+      right: 30px;
+      width: 180px;
+      border-radius: 6px;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-menu.open {
+      display: flex;
+    }
+  
+    .navbar-menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  } 
+
+ 

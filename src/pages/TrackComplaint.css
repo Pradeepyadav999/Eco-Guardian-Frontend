@@ -1,0 +1,61 @@
+.track-container {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    background: #f0fff0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .track-container h2 {
+    text-align: center;
+    color: #006400;
+    margin-bottom: 20px;
+  }
+  
+  .track-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .track-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .track-form button {
+    padding: 10px;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .track-form button:hover {
+    background-color: #004d00;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .complaint-details {
+    margin-top: 30px;
+    background-color: #e8fbe8;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .complaint-details h3 {
+    color: #2e8b57;
+    margin-bottom: 15px;
+  }

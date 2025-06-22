@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  aside {
+    min-height: 100vh;
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+    color: #d4edda;
+  }
+  .active-link {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+
+
+   .admin-dashboard h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    margin-right: 15px;
+    padding: 5px;
+  }
+  
+  .table-danger {
+    background-color: #f8d7da !important;
+  }
+  
+  .table td select {
+    width: 100%;
+  }
+  
+  button.btn-danger {
+    font-size: 0.9rem;
+  }
+  
+  /* AdminDashboard.css */
+
+.active-link {
+
+    background-color: rgba(255, 255, 255, 0.2);
+  
+    font-weight: bold;
+  
+    border-left: 4px solid white;
+  
+  }
+  
+  
+  
+  .table-danger {
+  
+    background-color: #f8d7da !important;
+  
+  }
